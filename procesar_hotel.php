@@ -21,7 +21,7 @@ $stmt = $conn->prepare("INSERT INTO HOTEL (nombre, ubicación, habitaciones_disp
 $stmt->bind_param("ssdi", $nombre, $ubicacion, $habitaciones, $tarifa);
 
 if ($stmt->execute()) {
-    echo "Hotel agregado con éxito";
+    echo "Hotel agregado con éxito no olvide activar sus descuentos ";
 } else {
     echo "Error: " . $stmt->error;
 }
