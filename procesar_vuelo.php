@@ -22,7 +22,7 @@ $stmt = $conn->prepare("INSERT INTO VUELO (origen, destino, fecha, plazas_dispon
 $stmt->bind_param("sssid", $origen, $destino, $fecha, $plazas, $precio);
 
 if ($stmt->execute()) {
-    echo "Vuelo agregado con éxito";
+    echo "Vuelo agregado con éxito no olvide activar sus cupones ";
 } else {
     echo "Error: " . $stmt->error;
 }
